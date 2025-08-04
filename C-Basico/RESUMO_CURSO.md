@@ -60,10 +60,10 @@ Este curso de C básico foi estruturado de forma progressiva, começando com con
 - ✅ Aula 11: Arrays Bidimensionais
 - ✅ Aula 12: Strings e Manipulação
 
-**Módulo 5: Ponteiros** (Aula 13-14)
+**Módulo 5: Ponteiros** (Aula 13-15) - CONCLUÍDO
 - ✅ Aula 13: Conceitos Básicos de Ponteiros
 - ✅ Aula 14: Aritmética de Ponteiros
-- ⏳ Aula 15: Ponteiros e Funções
+- ✅ Aula 15: Ponteiros e Funções
 
 ### 🔄 Módulos em Andamento
 
