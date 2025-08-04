@@ -1,0 +1,312 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "-std=c99",
+                "${file}",
+                "-o",
+                "${fileBasenameNoExtension}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compilar arquivo C atual"
+        },
+        {
+            "label": "build with make",
+            "type": "shell",
+            "command": "make",
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compilar usando Makefile"
+        },
+        {
+            "label": "build debug",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "-std=c99",
+                "-DDEBUG",
+                "${file}",
+                "-o",
+                "${fileBasenameNoExtension}_debug"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compilar com flags de debug"
+        },
+        {
+            "label": "build optimized",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-O2",
+                "-Wall",
+                "-Wextra",
+                "-std=c99",
+                "${file}",
+                "-o",
+                "${fileBasenameNoExtension}_opt"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compilar com otimizações"
+        },
+        {
+            "label": "build with libraries",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "-std=c99",
+                "${file}",
+                "-lm",
+                "-o",
+                "${fileBasenameNoExtension}"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compilar com bibliotecas matemáticas"
+        },
+        {
+            "label": "build multiple files",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "-std=c99",
+                "*.c",
+                "-o",
+                "program"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compilar múltiplos arquivos .c"
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "rm",
+            "args": [
+                "-f",
+                "*.o",
+                "*.exe",
+                "*.out",
+                "program",
+                "program_debug",
+                "program_opt"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "detail": "Limpar arquivos compilados"
+        },
+        {
+            "label": "run",
+            "type": "shell",
+            "command": "./${fileBasenameNoExtension}",
+            "group": "test",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "dependsOn": "build",
+            "detail": "Executar programa compilado"
+        },
+        {
+            "label": "run debug",
+            "type": "shell",
+            "command": "./${fileBasenameNoExtension}_debug",
+            "group": "test",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "dependsOn": "build debug",
+            "detail": "Executar versão debug"
+        },
+        {
+            "label": "check syntax",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-fsyntax-only",
+                "-Wall",
+                "-Wextra",
+                "-std=c99",
+                "${file}"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Verificar sintaxe sem compilar"
+        },
+        {
+            "label": "format code",
+            "type": "shell",
+            "command": "clang-format",
+            "args": [
+                "-i",
+                "${file}"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "detail": "Formatar código com clang-format"
+        },
+        {
+            "label": "static analysis",
+            "type": "shell",
+            "command": "cppcheck",
+            "args": [
+                "--enable=all",
+                "--std=c99",
+                "${file}"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "detail": "Análise estática com cppcheck"
+        },
+        {
+            "label": "memory check",
+            "type": "shell",
+            "command": "valgrind",
+            "args": [
+                "--leak-check=full",
+                "--show-leak-kinds=all",
+                "--track-origins=yes",
+                "--verbose",
+                "./${fileBasenameNoExtension}"
+            ],
+            "group": "test",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "dependsOn": "build",
+            "detail": "Verificar memory leaks com valgrind"
+        },
+        {
+            "label": "profile",
+            "type": "shell",
+            "command": "gprof",
+            "args": [
+                "${fileBasenameNoExtension}",
+                "gmon.out"
+            ],
+            "group": "test",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "dependsOn": "build optimized",
+            "detail": "Análise de performance com gprof"
+        }
+    ]
+} 

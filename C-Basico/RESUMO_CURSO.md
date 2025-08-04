@@ -34,7 +34,7 @@ Este curso de C básico foi estruturado de forma progressiva, começando com con
 ### Módulo 6: Estruturas e Arquivos
 - **Aula 16**: Estruturas (struct) - Definição, acesso, arrays de estruturas
 - **Aula 17**: Arquivos - Abertura, leitura, escrita, fechamento
-- **Aula 18**: Projeto Final - Aplicação completa dos conceitos
+- **Aula 18**: Projeto Final - Sistema de Gerenciamento de Biblioteca
 
 ## Progresso do Curso
 

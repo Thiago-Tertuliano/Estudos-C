@@ -1,0 +1,374 @@
+{
+    "C main function": {
+        "prefix": "main",
+        "body": [
+            "#include <stdio.h>",
+            "#include <stdlib.h>",
+            "",
+            "int main(int argc, char *argv[]) {",
+            "    $1",
+            "    return 0;",
+            "}"
+        ],
+        "description": "C main function with arguments"
+    },
+    "C main function simple": {
+        "prefix": "mains",
+        "body": [
+            "#include <stdio.h>",
+            "#include <stdlib.h>",
+            "",
+            "int main() {",
+            "    $1",
+            "    return 0;",
+            "}"
+        ],
+        "description": "C main function simple"
+    },
+    "C function": {
+        "prefix": "func",
+        "body": [
+            "void ${1:function_name}(${2:parameters}) {",
+            "    $3",
+            "}"
+        ],
+        "description": "C function definition"
+    },
+    "C function with return": {
+        "prefix": "funcr",
+        "body": [
+            "${1:int} ${2:function_name}(${3:parameters}) {",
+            "    $4",
+            "    return ${5:0};",
+            "}"
+        ],
+        "description": "C function with return value"
+    },
+    "C for loop": {
+        "prefix": "for",
+        "body": [
+            "for (int ${1:i} = ${2:0}; ${1:i} < ${3:10}; ${1:i}++) {",
+            "    $4",
+            "}"
+        ],
+        "description": "C for loop"
+    },
+    "C while loop": {
+        "prefix": "while",
+        "body": [
+            "while (${1:condition}) {",
+            "    $2",
+            "}"
+        ],
+        "description": "C while loop"
+    },
+    "C do while loop": {
+        "prefix": "dowhile",
+        "body": [
+            "do {",
+            "    $1",
+            "} while (${2:condition});"
+        ],
+        "description": "C do while loop"
+    },
+    "C if statement": {
+        "prefix": "if",
+        "body": [
+            "if (${1:condition}) {",
+            "    $2",
+            "}"
+        ],
+        "description": "C if statement"
+    },
+    "C if else statement": {
+        "prefix": "ifelse",
+        "body": [
+            "if (${1:condition}) {",
+            "    $2",
+            "} else {",
+            "    $3",
+            "}"
+        ],
+        "description": "C if else statement"
+    },
+    "C switch statement": {
+        "prefix": "switch",
+        "body": [
+            "switch (${1:expression}) {",
+            "    case ${2:value}:",
+            "        $3",
+            "        break;",
+            "    default:",
+            "        $4",
+            "        break;",
+            "}"
+        ],
+        "description": "C switch statement"
+    },
+    "C struct": {
+        "prefix": "struct",
+        "body": [
+            "struct ${1:struct_name} {",
+            "    ${2:int} ${3:member};",
+            "    $4",
+            "};"
+        ],
+        "description": "C struct definition"
+    },
+    "C typedef struct": {
+        "prefix": "tstruct",
+        "body": [
+            "typedef struct {",
+            "    ${1:int} ${2:member};",
+            "    $3",
+            "} ${4:type_name};"
+        ],
+        "description": "C typedef struct"
+    },
+    "C include": {
+        "prefix": "include",
+        "body": [
+            "#include <${1:stdio.h}>"
+        ],
+        "description": "C include statement"
+    },
+    "C include local": {
+        "prefix": "includel",
+        "body": [
+            "#include \"${1:header.h}\""
+        ],
+        "description": "C include local header"
+    },
+    "C define": {
+        "prefix": "define",
+        "body": [
+            "#define ${1:NAME} ${2:value}"
+        ],
+        "description": "C define macro"
+    },
+    "C printf": {
+        "prefix": "printf",
+        "body": [
+            "printf(\"${1:format}\", ${2:args});"
+        ],
+        "description": "C printf statement"
+    },
+    "C scanf": {
+        "prefix": "scanf",
+        "body": [
+            "scanf(\"${1:format}\", ${2:&variable});"
+        ],
+        "description": "C scanf statement"
+    },
+    "C malloc": {
+        "prefix": "malloc",
+        "body": [
+            "${1:type} *${2:ptr} = malloc(sizeof(${1:type}) * ${3:size});",
+            "if (${2:ptr} == NULL) {",
+            "    fprintf(stderr, \"Memory allocation failed\\n\");",
+            "    return ${4:1};",
+            "}"
+        ],
+        "description": "C malloc with error checking"
+    },
+    "C free": {
+        "prefix": "free",
+        "body": [
+            "free(${1:ptr});",
+            "${1:ptr} = NULL;"
+        ],
+        "description": "C free with null assignment"
+    },
+    "C array declaration": {
+        "prefix": "array",
+        "body": [
+            "${1:int} ${2:array}[${3:size}];"
+        ],
+        "description": "C array declaration"
+    },
+    "C array initialization": {
+        "prefix": "arrayi",
+        "body": [
+            "${1:int} ${2:array}[${3:size}] = {${4:0}};"
+        ],
+        "description": "C array initialization"
+    },
+    "C pointer declaration": {
+        "prefix": "ptr",
+        "body": [
+            "${1:int} *${2:ptr} = ${3:NULL};"
+        ],
+        "description": "C pointer declaration"
+    },
+    "C function pointer": {
+        "prefix": "fptr",
+        "body": [
+            "${1:return_type} (*${2:function_ptr})(${3:parameters});"
+        ],
+        "description": "C function pointer"
+    },
+    "C comment block": {
+        "prefix": "comment",
+        "body": [
+            "/**",
+            " * ${1:description}",
+            " * ",
+            " * @param ${2:param} ${3:description}",
+            " * @return ${4:description}",
+            " */"
+        ],
+        "description": "C comment block"
+    },
+    "C header guard": {
+        "prefix": "guard",
+        "body": [
+            "#ifndef ${1:HEADER_H}",
+            "#define ${1:HEADER_H}",
+            "",
+            "$2",
+            "",
+            "#endif // ${1:HEADER_H}"
+        ],
+        "description": "C header guard"
+    },
+    "C error handling": {
+        "prefix": "error",
+        "body": [
+            "if (${1:condition}) {",
+            "    fprintf(stderr, \"${2:Error message}\\n\");",
+            "    return ${3:1};",
+            "}"
+        ],
+        "description": "C error handling"
+    },
+    "C debug print": {
+        "prefix": "debug",
+        "body": [
+            "#ifdef DEBUG",
+            "    printf(\"${1:Debug message}\\n\");",
+            "#endif"
+        ],
+        "description": "C debug print"
+    },
+    "C assert": {
+        "prefix": "assert",
+        "body": [
+            "#include <assert.h>",
+            "",
+            "assert(${1:condition});"
+        ],
+        "description": "C assert statement"
+    },
+    "C file operations": {
+        "prefix": "file",
+        "body": [
+            "FILE *${1:file} = fopen(\"${2:filename}\", \"${3:r}\");",
+            "if (${1:file} == NULL) {",
+            "    fprintf(stderr, \"Error opening file\\n\");",
+            "    return ${4:1};",
+            "}",
+            "",
+            "$5",
+            "",
+            "fclose(${1:file});"
+        ],
+        "description": "C file operations"
+    },
+    "C string functions": {
+        "prefix": "string",
+        "body": [
+            "#include <string.h>",
+            "",
+            "char ${1:str}[${2:100}];",
+            "strcpy(${1:str}, \"${3:Hello}\");",
+            "strlen(${1:str});"
+        ],
+        "description": "C string functions"
+    },
+    "C math functions": {
+        "prefix": "math",
+        "body": [
+            "#include <math.h>",
+            "",
+            "${1:double} ${2:result} = ${3:sqrt}(${4:value});"
+        ],
+        "description": "C math functions"
+    },
+    "C time functions": {
+        "prefix": "time",
+        "body": [
+            "#include <time.h>",
+            "",
+            "time_t ${1:now} = time(NULL);",
+            "struct tm *${2:timeinfo} = localtime(&${1:now});"
+        ],
+        "description": "C time functions"
+    },
+    "C random numbers": {
+        "prefix": "random",
+        "body": [
+            "#include <stdlib.h>",
+            "#include <time.h>",
+            "",
+            "srand(time(NULL));",
+            "${1:int} ${2:random_num} = rand() % ${3:100};"
+        ],
+        "description": "C random numbers"
+    },
+    "C linked list node": {
+        "prefix": "llnode",
+        "body": [
+            "typedef struct ${1:Node} {",
+            "    ${2:int} ${3:data};",
+            "    struct ${1:Node} *${4:next};",
+            "} ${1:Node};"
+        ],
+        "description": "C linked list node"
+    },
+    "C binary tree node": {
+        "prefix": "btnode",
+        "body": [
+            "typedef struct ${1:TreeNode} {",
+            "    ${2:int} ${3:data};",
+            "    struct ${1:TreeNode} *${4:left};",
+            "    struct ${1:TreeNode} *${5:right};",
+            "} ${1:TreeNode};"
+        ],
+        "description": "C binary tree node"
+    },
+    "C stack implementation": {
+        "prefix": "stack",
+        "body": [
+            "typedef struct {",
+            "    ${1:int} *${2:data};",
+            "    int ${3:top};",
+            "    int ${4:capacity};",
+            "} ${5:Stack};",
+            "",
+            "void ${6:push}(${5:Stack} *${7:stack}, ${1:int} ${8:value}) {",
+            "    if (${7:stack}->${3:top} < ${7:stack}->${4:capacity}) {",
+            "        ${7:stack}->${2:data}[${7:stack}->${3:top}++] = ${8:value};",
+            "    }",
+            "}"
+        ],
+        "description": "C stack implementation"
+    },
+    "C queue implementation": {
+        "prefix": "queue",
+        "body": [
+            "typedef struct {",
+            "    ${1:int} *${2:data};",
+            "    int ${3:front};",
+            "    int ${4:rear};",
+            "    int ${5:size};",
+            "} ${6:Queue};",
+            "",
+            "void ${7:enqueue}(${6:Queue} *${8:queue}, ${1:int} ${9:value}) {",
+            "    if (${8:queue}->${4:rear} < ${8:queue}->${5:size}) {",
+            "        ${8:queue}->${2:data}[${8:queue}->${4:rear}++] = ${9:value};",
+            "    }",
+            "}"
+        ],
+        "description": "C queue implementation"
+    }
+} 

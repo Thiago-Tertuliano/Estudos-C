@@ -1,0 +1,282 @@
+{
+    // Configurações do C/C++ Extension
+    "C_Cpp.default.cStandard": "c99",
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.compilerPath": "/usr/bin/gcc",
+    "C_Cpp.default.intelliSenseMode": "gcc-x64",
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/**",
+        "/usr/include",
+        "/usr/local/include"
+    ],
+    "C_Cpp.default.defines": [],
+    "C_Cpp.default.warningLevel": "Warning",
+    "C_Cpp.default.cStandard": "c99",
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.compilerPath": "/usr/bin/gcc",
+    "C_Cpp.default.intelliSenseMode": "gcc-x64",
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/**",
+        "/usr/include",
+        "/usr/local/include"
+    ],
+    "C_Cpp.default.defines": [],
+    "C_Cpp.default.warningLevel": "Warning",
+    "C_Cpp.default.browse.path": [
+        "${workspaceFolder}/**",
+        "/usr/include",
+        "/usr/local/include"
+    ],
+    "C_Cpp.default.browse.limitSymbolsToIncludedHeaders": true,
+    "C_Cpp.default.browse.databaseFilename": "${workspaceFolder}/.vscode/browse.vc.db",
+    "C_Cpp.default.browse.engine": "default",
+    "C_Cpp.default.browse.path": [
+        "${workspaceFolder}/**",
+        "/usr/include",
+        "/usr/local/include"
+    ],
+    "C_Cpp.default.browse.limitSymbolsToIncludedHeaders": true,
+    "C_Cpp.default.browse.databaseFilename": "${workspaceFolder}/.vscode/browse.vc.db",
+    "C_Cpp.default.browse.engine": "default",
+
+    // Associações de arquivos
+    "files.associations": {
+        "*.c": "c",
+        "*.h": "c",
+        "*.cpp": "cpp",
+        "*.hpp": "cpp",
+        "*.cc": "cpp",
+        "*.cxx": "cpp",
+        "*.hh": "cpp",
+        "*.hxx": "cpp"
+    },
+
+    // Configurações do editor
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": true,
+    "editor.rulers": [80, 120],
+    "editor.wordWrap": "bounded",
+    "editor.minimap.enabled": true,
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.maxColumn": 120,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "editor.guides.indentation": true,
+    "editor.suggestSelection": "first",
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
+    },
+    "editor.parameterHints.enabled": true,
+    "editor.hover.enabled": true,
+    "editor.lightbulb.enabled": true,
+
+    // Configurações de arquivos
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/*.o": true,
+        "**/*.exe": true,
+        "**/*.out": true,
+        "**/build": true,
+        "**/bin": true,
+        "**/obj": true
+    },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/build/**": true,
+        "**/bin/**": true,
+        "**/obj/**": true
+    },
+
+    // Configurações do terminal
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.defaultProfile.osx": "bash",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontFamily": "Consolas, 'Courier New', monospace",
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "line",
+
+    // Configurações do explorer
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.incrementalNaming": "smart",
+    "explorer.openEditors.visible": 3,
+
+    // Configurações do search
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/*.code-search": true,
+        "**/build": true,
+        "**/bin": true,
+        "**/obj": true,
+        "**/*.o": true,
+        "**/*.exe": true,
+        "**/*.out": true
+    },
+
+    // Configurações do git
+    "git.enabled": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "git.enableCommitSigning": false,
+
+    // Configurações do workbench
+    "workbench.colorTheme": "Default Dark+",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.editor.showTabs": "multiple",
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.editor.wrapTabs": false,
+    "workbench.editor.decorations.badges": true,
+    "workbench.editor.decorations.colors": true,
+
+    // Configurações do breadcrumbs
+    "breadcrumbs.enabled": true,
+    "breadcrumbs.filePath": "on",
+    "breadcrumbs.symbolPath": "on",
+
+    // Configurações do minimap
+    "editor.minimap.enabled": true,
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.maxColumn": 120,
+    "editor.minimap.showSlider": "mouseover",
+
+    // Configurações do scrollbar
+    "editor.scrollbar.vertical": "auto",
+    "editor.scrollbar.horizontal": "auto",
+    "editor.scrollbar.verticalScrollbarSize": 14,
+    "editor.scrollbar.horizontalScrollbarSize": 14,
+
+    // Configurações do suggest
+    "editor.suggest.showKeywords": true,
+    "editor.suggest.showSnippets": true,
+    "editor.suggest.showUsers": true,
+    "editor.suggest.showFunctions": true,
+    "editor.suggest.showVariables": true,
+    "editor.suggest.showClasses": true,
+    "editor.suggest.showModules": true,
+    "editor.suggest.showProperties": true,
+    "editor.suggest.showEvents": true,
+    "editor.suggest.showOperators": true,
+    "editor.suggest.showUnits": true,
+    "editor.suggest.showValues": true,
+    "editor.suggest.showConstants": true,
+    "editor.suggest.showEnums": true,
+    "editor.suggest.showEnumMembers": true,
+    "editor.suggest.showWords": true,
+    "editor.suggest.showColors": true,
+    "editor.suggest.showFiles": true,
+    "editor.suggest.showReferences": true,
+    "editor.suggest.showCustomcolors": true,
+    "editor.suggest.showFolders": true,
+    "editor.suggest.showTypeParameters": true,
+    "editor.suggest.showWords": true,
+
+    // Configurações do parameter hints
+    "editor.parameterHints.enabled": true,
+    "editor.parameterHints.cycle": false,
+
+    // Configurações do hover
+    "editor.hover.enabled": true,
+    "editor.hover.delay": 300,
+
+    // Configurações do lightbulb
+    "editor.lightbulb.enabled": true,
+
+    // Configurações do code actions
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.organizeImports": true
+    },
+
+    // Configurações do format
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+
+    // Configurações do auto save
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+
+    // Configurações do auto save delay
+    "files.autoSaveDelay": 1000,
+
+    // Configurações do trim whitespace
+    "files.trimTrailingWhitespace": true,
+
+    // Configurações do insert final newline
+    "files.insertFinalNewline": true,
+
+    // Configurações do trim final newlines
+    "files.trimFinalNewlines": true,
+
+    // Configurações do eol
+    "files.eol": "\n",
+
+    // Configurações do encoding
+    "files.encoding": "utf8",
+
+    // Configurações do auto guess encoding
+    "files.autoGuessEncoding": false,
+
+    // Configurações do associations
+    "files.associations": {
+        "*.c": "c",
+        "*.h": "c",
+        "*.cpp": "cpp",
+        "*.hpp": "cpp",
+        "*.cc": "cpp",
+        "*.cxx": "cpp",
+        "*.hh": "cpp",
+        "*.hxx": "cpp"
+    },
+
+    // Configurações do exclude
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/*.o": true,
+        "**/*.exe": true,
+        "**/*.out": true,
+        "**/build": true,
+        "**/bin": true,
+        "**/obj": true
+    },
+
+    // Configurações do watcher exclude
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/build/**": true,
+        "**/bin/**": true,
+        "**/obj/**": true
+    }
+} 
