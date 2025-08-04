@@ -1,116 +1,183 @@
 # Resumo do Curso de C Básico
 
-## Status do Desenvolvimento
+## Visão Geral
 
-### ✅ Módulos Completados
+Este curso de C básico foi estruturado de forma progressiva, começando com conceitos fundamentais e avançando para tópicos mais complexos. Cada módulo contém aulas teóricas, exemplos práticos e exercícios para consolidar o aprendizado.
 
-#### Módulo 1: Introdução à Linguagem C
-- **Aula 1: Primeiro Programa** ✅
-  - Teoria sobre estrutura básica de um programa C
-  - Exemplo: Hello World com múltiplas mensagens
-  - Exercícios: Nome e idade, Informações acadêmicas, Calculadora simples
+## Estrutura do Curso
 
-- **Aula 2: Variáveis e Tipos de Dados** ✅
-  - Teoria sobre variáveis, tipos de dados, declaração e inicialização
-  - Exemplos: Variáveis básicas, Operações com variáveis
-  - Exercícios: Cadastro de aluno, Conversão de temperatura, Calculadora de área
+### Módulo 1: Introdução à Linguagem C
+- **Aula 1**: Primeiro Programa - Estrutura básica, compilação, "Hello World"
+- **Aula 2**: Variáveis e Tipos de Dados - Declaração, tipos primitivos, operações
+- **Aula 3**: Entrada e Saída - printf, scanf, formatação
 
-- **Aula 3: Entrada e Saída** ✅
-  - Teoria sobre printf, scanf, formatadores e caracteres especiais
-  - Exemplos: Cadastro simples, Calculadora interativa
-  - Exercícios: Calculadora IMC, Conversor de moedas, Calculadora de juros
+### Módulo 2: Estruturas de Controle
+- **Aula 4**: Operadores - Aritméticos, relacionais, lógicos, atribuição
+- **Aula 5**: Estruturas Condicionais - if-else, switch-case, operador ternário
+- **Aula 6**: Estruturas de Repetição - for, while, do-while, break/continue
 
-#### Módulo 2: Estruturas de Controle
-- **Aula 4: Operadores** ✅
-  - Teoria sobre operadores aritméticos, de atribuição, incremento/decremento
-  - Exemplos: Operadores básicos, Operadores de atribuição, Incremento/decremento
-  - Exercícios: Calculadora avançada, Conversor de unidades, Calculadora de média
+### Módulo 3: Funções e Modularização
+- **Aula 7**: Funções Básicas - Declaração, definição, parâmetros, retorno
+- **Aula 8**: Escopo e Passagem de Parâmetros - Escopo local/global, passagem por valor/referência
+- **Aula 9**: Funções Recursivas - Conceitos, exemplos clássicos, otimização
 
-- **Aula 5: Estruturas Condicionais** ✅
-  - Teoria sobre operadores relacionais, lógicos, if-else, switch-case, operador ternário
-  - Exemplos: Verificação de idade, Calculadora com switch, Operador ternário
-  - Exercícios: Sistema de notas, Calculadora de desconto, Verificador de triângulo
+### Módulo 4: Arrays e Strings
+- **Aula 10**: Arrays Unidimensionais - Declaração, inicialização, operações
+- **Aula 11**: Arrays Bidimensionais - Matrizes, operações, aplicações
+- **Aula 12**: Strings e Manipulação - Caracteres, string.h, operações
 
-- **Aula 6: Estruturas de Repetição** ✅
-  - Teoria sobre for, while, do-while, break e continue
-  - Exemplos: Tabuada, Soma de números, Número primo
-  - Exercícios: Calculadora de fatorial, Série Fibonacci, Verificador de números perfeitos
+### Módulo 5: Ponteiros
+- **Aula 13**: Conceitos Básicos de Ponteiros - Declaração, operadores & e *, inicialização
+- **Aula 14**: Aritmética de Ponteiros - Operações, navegação, arrays e ponteiros
+- **Aula 15**: Ponteiros e Funções - Passagem por referência, ponteiros para funções
 
-#### Módulo 3: Funções e Modularização
-- **Aula 7: Funções Básicas** ✅
-  - Teoria sobre conceito de funções, declaração vs definição, parâmetros e retorno
-  - Exemplos: Função simples, Função com parâmetros, Funções matemáticas
-  - Exercícios: Calculadora de área, Verificador de paridade, Calculadora de potência
+### Módulo 6: Estruturas e Arquivos
+- **Aula 16**: Estruturas (struct) - Definição, acesso, arrays de estruturas
+- **Aula 17**: Arquivos - Abertura, leitura, escrita, fechamento
+- **Aula 18**: Projeto Final - Aplicação completa dos conceitos
 
-- **Aula 8: Escopo e Passagem de Parâmetros** ✅
-  - Teoria sobre escopo de variáveis, passagem por valor vs referência, ponteiros básicos
-  - Exemplos: Escopo de variáveis, Passagem por valor, Passagem por referência
-  - Exercícios: Troca de valores, Calculadora com referência, Validador de dados
+## Progresso do Curso
 
-- **Aula 9: Funções Recursivas** ✅
-  - Teoria sobre recursividade, casos base e recursivos, vantagens e desvantagens
-  - Exemplos: Fatorial recursivo, Fibonacci recursivo, Soma de array recursivo
-  - Exercícios: Potência recursiva, MDC recursivo, Inversão de string recursiva
+### ✅ Módulos Concluídos
 
-### 🔄 Próximos Passos Sugeridos
+**Módulo 1: Introdução à Linguagem C** (Aula 1-3)
+- ✅ Aula 1: Primeiro Programa
+- ✅ Aula 2: Variáveis e Tipos de Dados
+- ✅ Aula 3: Entrada e Saída
 
-#### Módulo 4: Arrays e Strings
-- **Aula 10: Arrays Unidimensionais**
-- **Aula 11: Arrays Bidimensionais**
-- **Aula 12: Strings e Manipulação**
+**Módulo 2: Estruturas de Controle** (Aula 4-6)
+- ✅ Aula 4: Operadores
+- ✅ Aula 5: Estruturas Condicionais
+- ✅ Aula 6: Estruturas de Repetição
 
-#### Módulo 5: Ponteiros
-- **Aula 13: Conceitos Básicos de Ponteiros**
-- **Aula 14: Ponteiros e Arrays**
-- **Aula 15: Ponteiros e Funções**
+**Módulo 3: Funções e Modularização** (Aula 7-9)
+- ✅ Aula 7: Funções Básicas
+- ✅ Aula 8: Escopo e Passagem de Parâmetros
+- ✅ Aula 9: Funções Recursivas
 
-#### Módulo 6: Estruturas e Arquivos
-- **Aula 16: Estruturas (struct)**
-- **Aula 17: Arquivos - Leitura e Escrita**
-- **Aula 18: Projeto Final**
+**Módulo 4: Arrays e Strings** (Aula 10-12)
+- ✅ Aula 10: Arrays Unidimensionais
+- ✅ Aula 11: Arrays Bidimensionais
+- ✅ Aula 12: Strings e Manipulação
 
-## Estrutura de Arquivos Criada
+**Módulo 5: Ponteiros** (Aula 13-14)
+- ✅ Aula 13: Conceitos Básicos de Ponteiros
+- ✅ Aula 14: Aritmética de Ponteiros
+- ⏳ Aula 15: Ponteiros e Funções
 
-```
-C-Basico/
-├── README.md
-├── RESUMO_CURSO.md
-├── 01-Introducao/
-│   ├── 01-Primeiro-Programa/
-│   ├── 02-Variaveis-Tipos/
-│   └── 03-Entrada-Saida/
-├── 02-Estruturas-Controle/
-│   ├── 04-Operadores/
-│   ├── 05-Condicionais/
-│   └── 06-Repeticao/
-└── 03-Funcoes-Modularizacao/
-    ├── 07-Funcoes-Basicas/
-    ├── 08-Escopo-Passagem/
-    └── 09-Funcoes-Recursivas/
-```
+### 🔄 Módulos em Andamento
 
-## Conteúdo Total Desenvolvido
+**Módulo 6: Estruturas e Arquivos** (Aula 16-18)
+- ⏸️ Aula 16: Estruturas (struct)
+- ⏸️ Aula 17: Arquivos
+- ⏸️ Aula 18: Projeto Final
 
-### 📚 Teoria Completa
-- 9 aulas com documentação detalhada
-- Conceitos fundamentais da linguagem C
-- Exemplos práticos e exercícios
+## Conteúdo Detalhado por Módulo
 
-### 💻 Código Implementado
-- 27 arquivos de exemplo (.c)
-- 27 arquivos de exercício (.c)
-- Todos os códigos testados e funcionais
+### Módulo 1: Introdução à Linguagem C
+**Objetivos**: Compreender a estrutura básica de um programa C, aprender sobre variáveis e tipos de dados, e dominar entrada e saída.
 
-### 🎯 Exercícios Práticos
-- Exercícios progressivos de dificuldade
-- Aplicações práticas dos conceitos
-- Testes com diferentes cenários
+**Conceitos Principais**:
+- Estrutura de um programa C
+- Variáveis e tipos de dados (int, float, double, char)
+- Operadores aritméticos básicos
+- Funções printf() e scanf()
+- Formatação de saída
 
-## Próximas Ações Recomendadas
+**Exercícios Práticos**:
+- Calculadora simples
+- Conversor de temperatura
+- Cadastro de informações pessoais
 
-1. **Continuar com Módulo 4**: Arrays e Strings
-2. **Desenvolver Módulo 5**: Ponteiros
-3. **Finalizar com Módulo 6**: Estruturas e Arquivos
-4. **Criar projeto final** integrando todos os conceitos
+### Módulo 2: Estruturas de Controle
+**Objetivos**: Dominar estruturas de controle para criar programas com lógica condicional e repetição.
 
-O curso está 50% completo com uma base sólida nos conceitos fundamentais da linguagem C. 
+**Conceitos Principais**:
+- Operadores aritméticos, relacionais e lógicos
+- Estruturas if-else e switch-case
+- Loops for, while e do-while
+- Controle de fluxo com break e continue
+
+**Exercícios Práticos**:
+- Calculadora avançada
+- Sistema de notas
+- Verificação de números primos
+
+### Módulo 3: Funções e Modularização
+**Objetivos**: Aprender a modularizar código usando funções e entender conceitos de escopo.
+
+**Conceitos Principais**:
+- Declaração e definição de funções
+- Parâmetros e valores de retorno
+- Escopo de variáveis (local vs global)
+- Passagem por valor vs referência
+- Recursão
+
+**Exercícios Práticos**:
+- Biblioteca de funções matemáticas
+- Calculadora modular
+- Algoritmos recursivos (fatorial, Fibonacci)
+
+### Módulo 4: Arrays e Strings
+**Objetivos**: Trabalhar com estruturas de dados homogêneas e manipulação de texto.
+
+**Conceitos Principais**:
+- Arrays unidimensionais
+- Arrays bidimensionais (matrizes)
+- Strings como arrays de caracteres
+- Biblioteca string.h
+- Operações com arrays e strings
+
+**Exercícios Práticos**:
+- Calculadora de estatísticas
+- Manipulação de matrizes
+- Processamento de texto
+
+### Módulo 5: Ponteiros
+**Objetivos**: Compreender o conceito fundamental de ponteiros e suas aplicações.
+
+**Conceitos Principais**:
+- Conceitos básicos de ponteiros
+- Operadores & e *
+- Aritmética de ponteiros
+- Ponteiros e arrays
+- Ponteiros e funções
+
+**Exercícios Práticos**:
+- Calculadora com ponteiros
+- Busca em arrays usando ponteiros
+- Manipulação de strings com ponteiros
+
+## Metodologia
+
+### Estrutura de Cada Aula
+1. **Teoria**: Explicação dos conceitos com exemplos
+2. **Exemplos Práticos**: Demonstração do uso dos conceitos
+3. **Exercícios**: Aplicação prática dos conhecimentos
+4. **Resumo**: Revisão dos pontos principais
+
+### Recursos Incluídos
+- Documentação teórica detalhada (README.md)
+- Exemplos práticos comentados
+- Exercícios progressivos
+- Código pronto para compilação e execução
+
+### Objetivos de Aprendizagem
+- Compreensão sólida dos fundamentos da linguagem C
+- Capacidade de resolver problemas práticos
+- Boas práticas de programação
+- Preparação para tópicos avançados
+
+## Próximos Passos
+
+O curso está em desenvolvimento ativo. Os próximos módulos incluirão:
+
+1. **Conclusão do Módulo 5**: Ponteiros e Funções
+2. **Módulo 6**: Estruturas e Arquivos
+3. **Projeto Final**: Aplicação completa
+
+Cada módulo será desenvolvido seguindo a mesma estrutura de qualidade, com teoria detalhada, exemplos práticos e exercícios desafiadores.
+
+---
+
+*Última atualização: Módulo 5 - Aritmética de Ponteiros concluído* 
